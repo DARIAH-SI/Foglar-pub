@@ -9,7 +9,7 @@
    exclude-result-prefixes="tei html teidocx xs"
    version="2.0">
 
-   <xsl:import href="../../../../../pub-XSLT/Stylesheets/html5-foundation6-chs/to.xsl"/>
+   <xsl:import href="../../../../pub-XSLT/Stylesheets/html5-foundation6-chs/to.xsl"/>
     
    <xsl:import href="text-critical.xsl"/>
    
@@ -52,11 +52,15 @@
          <p>Copyright: 2013, TEI Consortium</p>
       </desc>
    </doc>
+    
+    <xsl:param name="localWebsite">true</xsl:param>
    
     <!-- Uredi parametre v skladu z dodatnimi zahtevami za pretvorbo te publikacije: -->
     
-    <!-- ../../../  -->
-    <xsl:param name="path-general">http://www2.sistory.si/publikacije/</xsl:param>
+    <!--<xsl:param name="path-general">../../../</xsl:param>-->
+    <!--<xsl:param name="path-general">http://www2.sistory.si/publikacije/</xsl:param>-->
+    <!-- v primeru localWebsite='true' spodnji paragraf nima vrednosti -->
+    <xsl:param name="path-general"></xsl:param>
    
     <!-- Andrej: moja absolutna pot v outputDir je /Users/andrejp/Repo/pub/Kapelski/sidih/,
          vendar v tem primeru naredi pretvorbro iz generiranega sidih/kapelski.xml kar direktno v sidih/ direktorij -->
@@ -75,7 +79,7 @@
     
     <!-- Slovene localisation of eZRC/TEI element, attribute and value names / glosses to Slovene -->
     <!-- Needed for teiHeader localisation and write-out of e.g. Janus elements -->
-    <xsl:param name="localisation-file">../../../HTML/teiLocalise-sl.xml</xsl:param>
+    <xsl:param name="localisation-file">../../teiLocalise-sl.xml</xsl:param>
     <xsl:key name="id" match="tei:*" use="@xml:id"/>
     
     <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">

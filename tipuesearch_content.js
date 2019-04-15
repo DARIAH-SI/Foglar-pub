@@ -837,7 +837,7 @@ var tipuesearch = {"pages": [
 { "title": "Ta druga pesem od Božje lubezni na vižo pesme mizerere", "text": "Bog te lubim Bog & Ne pustim se odvrniti Od tega svejta prenoriti Vse veselje čem zapustiti Dale naprej prav govoriti Bog te lubim Bog &", "tags": "", "url": "foglar-crit.html#foglar-lg-526" },
 { "title": "Ta druga pesem od Božje lubezni na vižo pesme mizerere", "text": "7", "tags": "", "url": "foglar-crit.html#foglar-label-343" },
 { "title": "Ta druga pesem od Božje lubezni na vižo pesme mizerere", "text": "Bog te lubim Bog & Misli moje nu vse djaje Vsi pučutki vse zdihuvaje Vse to kaj se per meni znajde Od lubezni proč ne zajde Bog te lubim Bog &", "tags": "", "url": "foglar-crit.html#foglar-lg-529" },
-{ "title": "Ta druga pesem od Božje lubezni na vižo pesme mizerere", "text": "", "tags": "", "url": "foglar-crit.html#foglar-gap-34" },
+{ "title": "Ta druga pesem od Božje lubezni na vižo pesme mizerere", "text": "", "tags": "", "url": "foglar-crit.html#gap-34" },
 { "title": "Ta druga pesem od Božje lubezni na vižo pesme mizerere", "text": "14", "tags": "", "url": "foglar-crit.html#foglar-label-344" },
 { "title": "Ta druga pesem od Božje lubezni na vižo pesme mizerere", "text": "", "tags": "", "url": "foglar-crit.html#foglar-crit.pb.08r" },
 { "title": "Ta druga pesem od Božje lubezni na vižo pesme mizerere", "text": "Bog te lubim Bog & Smrt naj sulcoj name cila Strejle naj krez me pošila Pred da se v smrt perpravim V truc na še enkrat jaz pravim Bog te lubim Bog &", "tags": "", "url": "foglar-crit.html#foglar-lg-532" },
