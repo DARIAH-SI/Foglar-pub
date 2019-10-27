@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://ns.saxonica.com/xslt/export" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vv="http://saxon.sf.net/generated-variable" xmlns:java-type="http://saxon.sf.net/java-type" version="30" packageVersion="1" saxonVersion="9.8.0.12" target="JS" targetVersion="1" relocatable="false">
  <co id="0" vis="PUBLIC" binds="">
-  <globalParam name="Q{}firstPB" type="item()*" line="13" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" visibility="PUBLIC" jsAcceptor="return val;" jsCardCheck="function c() {return true;};">
-   <doc baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="13" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="01r" validation="preserve">
+  <globalParam name="Q{}firstPB" type="item()*" line="13" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" visibility="PUBLIC" jsAcceptor="return val;" jsCardCheck="function c() {return true;};">
+   <doc baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="13" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="01r" validation="preserve">
     <valueOf flags="Sl">
      <str val="01r"/>
     </valueOf>
@@ -10,8 +10,8 @@
   </globalParam>
  </co>
  <co id="1" binds="2 2 2 2 2 2">
-  <template name="Q{}head" flags="os" line="957" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" slots="21">
-   <sequence role="body" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="958">
+  <template name="Q{}head" flags="os" line="957" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" slots="21">
+   <sequence role="body" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="958">
     <param name="Q{}type" slot="0">
      <str role="select" val=""/>
      <supplied role="conversion" slot="0"/>
@@ -566,9 +566,9 @@
  </co>
  <co id="3" binds="3">
   <mode name="Q{}besedilo" onNo="TC" flags="W" patternSlots="0">
-   <templateRule prec="0" prio="-0.5" seq="0" rank="0" minImp="0" slots="0" flags="s" line="1058" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="-0.5" seq="0" rank="0" minImp="0" slots="0" flags="s" line="1058" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="( element() | text() | comment() | processing-instruction() )" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType===1 || item.nodeType===3 || item.nodeType===7 || item.nodeType===8);"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1058">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1058">
      <valueOf>
       <str val="&#xA;        "/>
      </valueOf>
@@ -594,9 +594,9 @@
  </co>
  <co id="4" binds="4">
   <mode name="Q{}witness-description" onNo="TC" flags="W" patternSlots="0">
-   <templateRule prec="0" prio="0.0" seq="0" rank="0" minImp="0" slots="0" flags="s" line="609" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="0" rank="0" minImp="0" slots="0" flags="s" line="609" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}ref)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='ref';"/>
-    <elem role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="610" name="a" nsuri="">
+    <elem role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="610" name="a" nsuri="">
      <sequence>
       <att name="href" flags="l">
        <convert from="xs:untypedAtomic" to="xs:string">
@@ -615,8 +615,8 @@
   </mode>
  </co>
  <co id="5" binds="">
-  <template name="Q{}pannable-image" flags="os" line="629" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" slots="1">
-   <sequence role="body" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="630">
+  <template name="Q{}pannable-image" flags="os" line="629" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" slots="1">
+   <sequence role="body" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="630">
     <param name="Q{}page" slot="0">
      <str role="select" val=""/>
      <supplied role="conversion" slot="0"/>
@@ -653,8 +653,8 @@
   </template>
  </co>
  <co id="6" vis="PUBLIC" binds="">
-  <globalParam name="Q{}firstPoem" type="item()*" line="14" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" visibility="PUBLIC" jsAcceptor="return val;" jsCardCheck="function c() {return true;};">
-   <doc baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="14" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="1" validation="preserve">
+  <globalParam name="Q{}firstPoem" type="item()*" line="14" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" visibility="PUBLIC" jsAcceptor="return val;" jsCardCheck="function c() {return true;};">
+   <doc baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="14" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="1" validation="preserve">
     <valueOf flags="Sl">
      <str val="1"/>
     </valueOf>
@@ -662,8 +662,8 @@
   </globalParam>
  </co>
  <co id="7" binds="">
-  <template name="Q{}lb" flags="os" line="1336" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" slots="1">
-   <sequence role="body" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1337">
+  <template name="Q{}lb" flags="os" line="1336" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" slots="1">
+   <sequence role="body" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1337">
     <param name="Q{}lb" slot="0">
      <str role="select" val=""/>
      <supplied role="conversion" slot="0"/>
@@ -715,8 +715,8 @@
   </template>
  </co>
  <co id="8" binds="">
-  <template name="Q{}page-end" flags="os" line="621" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" slots="3">
-   <sequence role="body" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="622">
+  <template name="Q{}page-end" flags="os" line="621" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" slots="3">
+   <sequence role="body" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="622">
     <param name="Q{}nextPage" slot="0">
      <str role="select" val=""/>
      <supplied role="conversion" slot="0"/>
@@ -776,8 +776,8 @@
   </template>
  </co>
  <co id="9" binds="">
-  <template name="Q{}page-start" flags="os" line="615" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" slots="2">
-   <sequence role="body" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="616">
+  <template name="Q{}page-start" flags="os" line="615" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" slots="2">
+   <sequence role="body" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="616">
     <param name="Q{}page" slot="0">
      <str role="select" val=""/>
      <supplied role="conversion" slot="0"/>
@@ -826,8 +826,8 @@
   </template>
  </co>
  <co id="10" binds="2 2">
-  <template name="Q{}process-content" flags="os" line="644" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" slots="10">
-   <sequence role="body" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="645">
+  <template name="Q{}process-content" flags="os" line="644" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" slots="10">
+   <sequence role="body" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="645">
     <param name="Q{}type" slot="0">
      <str role="select" val=""/>
      <supplied role="conversion" slot="0"/>
@@ -857,7 +857,7 @@
      <supplied role="conversion" slot="6"/>
     </param>
     <let line="652" var="content" as="document-node()" slot="7" eval="7">
-     <doc line="653" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" validation="preserve">
+     <doc line="653" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" validation="preserve">
       <sequence>
        <choose>
         <gc op="=" card="N:1" comp="GAC|http://www.w3.org/2005/xpath-functions/collation/codepoint">
@@ -1080,8 +1080,8 @@
   </template>
  </co>
  <co id="11" vis="PUBLIC" binds="">
-  <globalParam name="Q{}path-general" type="item()*" line="11" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" visibility="PUBLIC" jsAcceptor="return val;" jsCardCheck="function c() {return true;};">
-   <doc baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="11" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="../../../" validation="preserve">
+  <globalParam name="Q{}path-general" type="item()*" line="11" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" visibility="PUBLIC" jsAcceptor="return val;" jsCardCheck="function c() {return true;};">
+   <doc baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="11" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="../../../" validation="preserve">
     <valueOf flags="Sl">
      <str val="../../../"/>
     </valueOf>
@@ -1090,29 +1090,29 @@
  </co>
  <co id="2" binds="3 3 0 6 0 0 0 0 9 8 9 8 5 10 5 10 10 10 5 10 10 4 10 4 10 4 10 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 7 7 2 2 2 2 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2">
   <mode onNo="TC" flags="dW" patternSlots="0">
-   <templateRule prec="0" prio="-0.5" seq="0" rank="0" minImp="0" slots="35" flags="s" line="16" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="-0.5" seq="0" rank="0" minImp="0" slots="35" flags="s" line="16" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="document-node()" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType===9||item.nodeType===11);"/>
-    <let role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="18" var="type" as="item()*" slot="0" eval="8">
-     <let var="vv:LHS1816308021" as="map(*)" slot="1" eval="8">
+    <let role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="18" var="type" as="item()*" slot="0" eval="8">
+     <let var="vv:LHS917396588" as="map(*)" slot="1" eval="8">
       <ifCall name="Q{http://saxonica.com/ns/interactiveXSLT}query-params" type="map(*)"/>
       <ifCall name="Q{http://www.w3.org/2005/xpath-functions/map}get" type="item()*">
-       <varRef name="vv:LHS1816308021" slot="1"/>
+       <varRef name="vv:LHS917396588" slot="1"/>
        <str val="type"/>
       </ifCall>
      </let>
      <let line="22" var="mode" as="item()*" slot="2" eval="8">
-      <let var="vv:LHS1652906701" as="map(*)" slot="3" eval="8">
+      <let var="vv:LHS2006144599" as="map(*)" slot="3" eval="8">
        <ifCall name="Q{http://saxonica.com/ns/interactiveXSLT}query-params" type="map(*)"/>
        <ifCall name="Q{http://www.w3.org/2005/xpath-functions/map}get" type="item()*">
-        <varRef name="vv:LHS1652906701" slot="3"/>
+        <varRef name="vv:LHS2006144599" slot="3"/>
         <str val="mode"/>
        </ifCall>
       </let>
       <let line="24" var="page" as="item()*" slot="4" eval="8">
-       <let var="vv:LHS1723515461" as="map(*)" slot="5" eval="8">
+       <let var="vv:LHS44508313" as="map(*)" slot="5" eval="8">
         <ifCall name="Q{http://saxonica.com/ns/interactiveXSLT}query-params" type="map(*)"/>
         <ifCall name="Q{http://www.w3.org/2005/xpath-functions/map}get" type="item()*">
-         <varRef name="vv:LHS1723515461" slot="5"/>
+         <varRef name="vv:LHS44508313" slot="5"/>
          <str val="page"/>
         </ifCall>
        </let>
@@ -1125,10 +1125,10 @@
           <varRef name="page" slot="4"/>
          </data>
          <let line="26" var="poem" as="item()*" slot="8" eval="8">
-          <let var="vv:LHS599281910" as="map(*)" slot="9" eval="8">
+          <let var="vv:LHS1177437597" as="map(*)" slot="9" eval="8">
            <ifCall name="Q{http://saxonica.com/ns/interactiveXSLT}query-params" type="map(*)"/>
            <ifCall name="Q{http://www.w3.org/2005/xpath-functions/map}get" type="item()*">
-            <varRef name="vv:LHS599281910" slot="9"/>
+            <varRef name="vv:LHS1177437597" slot="9"/>
             <str val="poem"/>
            </ifCall>
           </let>
@@ -1153,15 +1153,15 @@
                 <varRef name="poem" slot="8"/>
                </data>
                <let line="28" var="lb" as="item()*" slot="15" eval="8">
-                <let var="vv:LHS1523207861" as="map(*)" slot="16" eval="8">
+                <let var="vv:LHS2062576127" as="map(*)" slot="16" eval="8">
                  <ifCall name="Q{http://saxonica.com/ns/interactiveXSLT}query-params" type="map(*)"/>
                  <ifCall name="Q{http://www.w3.org/2005/xpath-functions/map}get" type="item()*">
-                  <varRef name="vv:LHS1523207861" slot="16"/>
+                  <varRef name="vv:LHS2062576127" slot="16"/>
                   <str val="lb"/>
                  </ifCall>
                 </let>
                 <let line="30" var="pages" as="document-node()" slot="17" eval="7">
-                 <doc line="31" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" validation="preserve">
+                 <doc line="31" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" validation="preserve">
                   <forEach>
                    <slash>
                     <fn name="key">
@@ -1213,7 +1213,7 @@
                     </slash>
                    </docOrder>
                    <let line="37" var="poems" as="document-node()" slot="20" eval="7">
-                    <doc line="38" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" validation="preserve">
+                    <doc line="38" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" validation="preserve">
                      <forEach>
                       <filter flags="b">
                        <slash>
@@ -1254,7 +1254,7 @@
                          <att name="title" flags="l">
                           <convert from="xs:untypedAtomic" to="xs:string">
                            <let var="title-from-head" as="document-node()" slot="21" eval="7">
-                            <doc line="44" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" validation="preserve">
+                            <doc line="44" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" validation="preserve">
                              <choose>
                               <fn name="exists">
                                <slash simple="1">
@@ -1434,7 +1434,7 @@
                            </slash>
                            <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name==='id'"/>
                           </slash>
-                          <resultDoc line="73" global="#&#xA;#Sun Apr 14 17:55:00 CEST 2019&#xA;" local="#&#xA;#Sun Apr 14 17:55:00 CEST 2019&#xA;method={http\://saxonica.com/ns/interactiveXSLT}replace-content&#xA;">
+                          <resultDoc line="73" global="#&#xA;#Sun Oct 27 11:49:36 CET 2019&#xA;" local="#&#xA;#Sun Oct 27 11:49:36 CET 2019&#xA;method={http\://saxonica.com/ns/interactiveXSLT}replace-content&#xA;">
                            <str role="href" val="#para"/>
                            <sequence role="content" line="74">
                             <elem name="p" nsuri="">
@@ -2213,13 +2213,13 @@
                                 <str val="page"/>
                                </gc>
                                <let line="211" var="page-start-dipl" as="document-node()" slot="28" eval="7">
-                                <doc line="212" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" validation="preserve">
+                                <doc line="212" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" validation="preserve">
                                  <callT name="page-start" bSlot="8">
                                   <withParam name="Q{}page" flags="c">
                                    <varRef line="213" name="page" slot="4"/>
                                   </withParam>
                                   <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                   <doc line="214" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
+                                   <doc line="214" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
                                     <valueOf flags="Sl">
                                      <str val="dipl"/>
                                     </valueOf>
@@ -2228,13 +2228,13 @@
                                  </callT>
                                 </doc>
                                 <let line="217" var="page-end-dipl" as="document-node()" slot="29" eval="7">
-                                 <doc line="218" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" validation="preserve">
+                                 <doc line="218" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" validation="preserve">
                                   <callT name="page-end" bSlot="9">
                                    <withParam name="Q{}nextPage" flags="c" as="element(Q{}page)*">
                                     <varRef line="219" name="nextPage" slot="19"/>
                                    </withParam>
                                    <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                    <doc line="220" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
+                                    <doc line="220" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
                                      <valueOf flags="Sl">
                                       <str val="dipl"/>
                                      </valueOf>
@@ -2243,13 +2243,13 @@
                                   </callT>
                                  </doc>
                                  <let line="223" var="page-start-crit" as="document-node()" slot="30" eval="7">
-                                  <doc line="224" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" validation="preserve">
+                                  <doc line="224" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" validation="preserve">
                                    <callT name="page-start" bSlot="10">
                                     <withParam name="Q{}page" flags="c">
                                      <varRef line="225" name="page" slot="4"/>
                                     </withParam>
                                     <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                     <doc line="226" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="crit" validation="preserve">
+                                     <doc line="226" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="crit" validation="preserve">
                                       <valueOf flags="Sl">
                                        <str val="crit"/>
                                       </valueOf>
@@ -2258,13 +2258,13 @@
                                    </callT>
                                   </doc>
                                   <let line="229" var="page-end-crit" as="document-node()" slot="31" eval="7">
-                                   <doc line="230" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" validation="preserve">
+                                   <doc line="230" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" validation="preserve">
                                     <callT name="page-end" bSlot="11">
                                      <withParam name="Q{}nextPage" flags="c" as="element(Q{}page)*">
                                       <varRef line="231" name="nextPage" slot="19"/>
                                      </withParam>
                                      <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                      <doc line="232" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="crit" validation="preserve">
+                                      <doc line="232" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="crit" validation="preserve">
                                        <valueOf flags="Sl">
                                         <str val="crit"/>
                                        </valueOf>
@@ -2643,7 +2643,7 @@
                                            <varRef line="294" name="page-end-dipl" slot="29"/>
                                           </withParam>
                                           <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                           <doc line="295" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
+                                           <doc line="295" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
                                             <valueOf flags="Sl">
                                              <str val="dipl"/>
                                             </valueOf>
@@ -2701,7 +2701,7 @@
                                            <varRef line="313" name="page-end-crit" slot="31"/>
                                           </withParam>
                                           <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                           <doc line="314" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="crit" validation="preserve">
+                                           <doc line="314" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="crit" validation="preserve">
                                             <valueOf flags="Sl">
                                              <str val="crit"/>
                                             </valueOf>
@@ -2747,7 +2747,7 @@
                                            <varRef line="327" name="page-end-dipl" slot="29"/>
                                           </withParam>
                                           <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                           <doc line="328" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
+                                           <doc line="328" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
                                             <valueOf flags="Sl">
                                              <str val="dipl"/>
                                             </valueOf>
@@ -2778,7 +2778,7 @@
                                            <varRef line="337" name="page-end-crit" slot="31"/>
                                           </withParam>
                                           <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                           <doc line="338" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="crit" validation="preserve">
+                                           <doc line="338" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="crit" validation="preserve">
                                             <valueOf flags="Sl">
                                              <str val="crit"/>
                                             </valueOf>
@@ -2836,7 +2836,7 @@
                                            <varRef line="356" name="page-end-dipl" slot="29"/>
                                           </withParam>
                                           <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                           <doc line="357" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
+                                           <doc line="357" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
                                             <valueOf flags="Sl">
                                              <str val="dipl"/>
                                             </valueOf>
@@ -2867,7 +2867,7 @@
                                            <varRef line="366" name="page-end-crit" slot="31"/>
                                           </withParam>
                                           <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                           <doc line="367" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="crit" validation="preserve">
+                                           <doc line="367" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="crit" validation="preserve">
                                             <valueOf flags="Sl">
                                              <str val="crit"/>
                                             </valueOf>
@@ -3615,7 +3615,7 @@
                                         <varRef line="474" name="nextPoem" slot="23"/>
                                        </withParam>
                                        <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                        <doc line="475" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
+                                        <doc line="475" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
                                          <valueOf flags="Sl">
                                           <str val="dipl"/>
                                          </valueOf>
@@ -3785,7 +3785,7 @@
                                         <varRef line="499" name="nextPoem" slot="23"/>
                                        </withParam>
                                        <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                        <doc line="500" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
+                                        <doc line="500" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
                                          <valueOf flags="Sl">
                                           <str val="dipl"/>
                                          </valueOf>
@@ -3947,7 +3947,7 @@
                                          <varRef line="525" name="nextPoem" slot="23"/>
                                         </withParam>
                                         <withParam name="Q{}content-type" flags="c" as="document-node()">
-                                         <doc line="526" base="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
+                                         <doc line="526" base="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" flags="t" text="dipl" validation="preserve">
                                           <valueOf flags="Sl">
                                            <str val="dipl"/>
                                           </valueOf>
@@ -4330,9 +4330,9 @@
      </let>
     </let>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}orig)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='orig';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -4387,9 +4387,9 @@
      </applyT>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="10" rank="1" minImp="0" slots="12" flags="s" line="1143" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="10" rank="1" minImp="0" slots="12" flags="s" line="1143" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}lg)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='lg';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1144">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1144">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -4663,9 +4663,9 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="17" rank="1" minImp="0" slots="7" flags="s" line="1423" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="17" rank="1" minImp="0" slots="7" flags="s" line="1423" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}supplied)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='supplied';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1424">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1424">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -4767,9 +4767,9 @@
      </elem>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="24" rank="1" minImp="0" slots="7" flags="s" line="1740" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="24" rank="1" minImp="0" slots="7" flags="s" line="1740" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}unclear)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='unclear';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1741">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1741">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -4831,9 +4831,9 @@
      </elem>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}expan)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='expan';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -4888,13 +4888,13 @@
      </applyT>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="1" rank="1" minImp="0" slots="0" flags="s" line="697" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="1" rank="1" minImp="0" slots="0" flags="s" line="697" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}pb)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='pb';"/>
     <empty role="action"/>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="2" rank="1" minImp="0" slots="10" flags="s" line="701" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="2" rank="1" minImp="0" slots="10" flags="s" line="701" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}fw)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='fw';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="702">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="702">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -5068,9 +5068,9 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="22" rank="1" minImp="0" slots="7" flags="s" line="1676" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="22" rank="1" minImp="0" slots="7" flags="s" line="1676" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}del)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='del';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1677">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1677">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -5127,9 +5127,9 @@
      </elem>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="4" rank="1" minImp="0" slots="10" flags="s" line="790" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="4" rank="1" minImp="0" slots="10" flags="s" line="790" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}app)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='app';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="791">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="791">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -5289,9 +5289,9 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}corr)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='corr';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -5346,9 +5346,9 @@
      </applyT>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="9" rank="1" minImp="0" slots="10" flags="s" line="1105" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="9" rank="1" minImp="0" slots="10" flags="s" line="1105" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}closer)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='closer';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1106">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1106">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -5512,9 +5512,9 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="6" rank="1" minImp="0" slots="7" flags="s" line="869" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="6" rank="1" minImp="0" slots="7" flags="s" line="869" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}rdg)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='rdg';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="870">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="870">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -5565,7 +5565,7 @@
        <choose line="883">
         <fn name="not">
          <fn name="string">
-          <dot module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" line="883" type="element(Q{http://www.tei-c.org/ns/1.0}rdg)"/>
+          <dot module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" line="883" type="element(Q{http://www.tei-c.org/ns/1.0}rdg)"/>
          </fn>
         </fn>
         <elem line="884" name="span" nsuri="">
@@ -5635,9 +5635,9 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="15" rank="1" minImp="0" slots="7" flags="s" line="1384" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="15" rank="1" minImp="0" slots="7" flags="s" line="1384" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}note)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='note';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1385">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1385">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -5710,9 +5710,9 @@
      </elem>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}abbr)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='abbr';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -5767,9 +5767,9 @@
      </applyT>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="3" rank="1" minImp="0" slots="12" flags="s" line="739" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="3" rank="1" minImp="0" slots="12" flags="s" line="739" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}div)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='div';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="740">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="740">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -5983,9 +5983,9 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="12" rank="1" minImp="0" slots="10" flags="s" line="1276" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="12" rank="1" minImp="0" slots="10" flags="s" line="1276" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}label)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='label';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1277">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1277">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -6179,9 +6179,9 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}reg)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='reg';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -6236,12 +6236,12 @@
      </applyT>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.5" seq="11" rank="2" minImp="0" slots="10" flags="s" line="1208" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.5" seq="11" rank="2" minImp="0" slots="10" flags="s" line="1208" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.withUpper role="match" axis="parent" upFirst="false">
      <p.nodeTest test="element(Q{http://www.tei-c.org/ns/1.0}l)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='l';"/>
      <p.nodeTest test="element(Q{http://www.tei-c.org/ns/1.0}lg)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='lg';"/>
     </p.withUpper>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1209">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1209">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -6507,9 +6507,9 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="13" rank="1" minImp="0" slots="10" flags="s" line="1314" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="13" rank="1" minImp="0" slots="10" flags="s" line="1314" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}lb)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='lb';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1315">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1315">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -6631,9 +6631,9 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="25" rank="1" minImp="0" slots="0" flags="s" line="1761" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="25" rank="1" minImp="0" slots="0" flags="s" line="1761" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}gap)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='gap';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1762">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1762">
      <elem name="span" nsuri="">
       <sequence>
        <att name="class" flags="l">
@@ -6707,9 +6707,9 @@
      </elem>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="16" rank="1" minImp="0" slots="8" flags="s" line="1403" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="16" rank="1" minImp="0" slots="8" flags="s" line="1403" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}handShift)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='handShift';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1404">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1404">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -6835,9 +6835,9 @@
      </let>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="21" rank="1" minImp="0" slots="7" flags="s" line="1655" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}sic)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='sic';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1656">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -6892,9 +6892,9 @@
      </applyT>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="8" rank="1" minImp="0" slots="10" flags="s" line="1066" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="8" rank="1" minImp="0" slots="10" flags="s" line="1066" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}ab)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='ab';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1067">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1067">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -7058,9 +7058,9 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="23" rank="1" minImp="0" slots="8" flags="s" line="1698" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="23" rank="1" minImp="0" slots="8" flags="s" line="1698" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}add)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='add';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1699">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1699">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -7166,9 +7166,9 @@
      </let>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="7" rank="1" minImp="0" slots="12" flags="s" line="904" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="7" rank="1" minImp="0" slots="12" flags="s" line="904" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}head)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='head';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="905">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="905">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -7379,9 +7379,9 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="14" rank="1" minImp="0" slots="7" flags="s" line="1355" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="14" rank="1" minImp="0" slots="7" flags="s" line="1355" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}hi)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='hi';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1356">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1356">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -7453,9 +7453,9 @@
      </elem>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.0" seq="5" rank="1" minImp="0" slots="10" flags="s" line="824" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.0" seq="5" rank="1" minImp="0" slots="10" flags="s" line="824" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.nodeTest role="match" test="element(Q{http://www.tei-c.org/ns/1.0}lem)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='lem';"/>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="825">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="825">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -7603,7 +7603,7 @@
        <choose line="848">
         <fn name="not">
          <fn name="string">
-          <dot module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" line="848" type="element(Q{http://www.tei-c.org/ns/1.0}lem)"/>
+          <dot module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" line="848" type="element(Q{http://www.tei-c.org/ns/1.0}lem)"/>
          </fn>
         </fn>
         <elem line="849" name="span" nsuri="">
@@ -7673,10 +7673,10 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.5" seq="20" rank="2" minImp="0" slots="7" flags="s" line="1588" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.5" seq="20" rank="2" minImp="0" slots="7" flags="s" line="1588" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.withPredicate role="match">
      <p.nodeTest test="element(Q{http://www.tei-c.org/ns/1.0}choice)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='choice';"/>
-     <and baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1588" op="and">
+     <and baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1588" op="and">
       <fn name="exists">
        <axis name="child" nodeTest="element(Q{http://www.tei-c.org/ns/1.0}orig)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='orig';"/>
       </fn>
@@ -7685,7 +7685,7 @@
       </fn>
      </and>
     </p.withPredicate>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1589">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1589">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -7948,10 +7948,10 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.5" seq="19" rank="2" minImp="0" slots="7" flags="s" line="1521" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.5" seq="19" rank="2" minImp="0" slots="7" flags="s" line="1521" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.withPredicate role="match">
      <p.nodeTest test="element(Q{http://www.tei-c.org/ns/1.0}choice)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='choice';"/>
-     <and baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1521" op="and">
+     <and baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1521" op="and">
       <fn name="exists">
        <axis name="child" nodeTest="element(Q{http://www.tei-c.org/ns/1.0}sic)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='sic';"/>
       </fn>
@@ -7960,7 +7960,7 @@
       </fn>
      </and>
     </p.withPredicate>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1522">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1522">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -8223,10 +8223,10 @@
      </choose>
     </sequence>
    </templateRule>
-   <templateRule prec="0" prio="0.5" seq="18" rank="2" minImp="0" slots="7" flags="s" line="1455" module="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl">
+   <templateRule prec="0" prio="0.5" seq="18" rank="2" minImp="0" slots="7" flags="s" line="1455" module="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl">
     <p.withPredicate role="match">
      <p.nodeTest test="element(Q{http://www.tei-c.org/ns/1.0}choice)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='choice';"/>
-     <and baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1455" op="and">
+     <and baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1455" op="and">
       <fn name="exists">
        <axis name="child" nodeTest="element(Q{http://www.tei-c.org/ns/1.0}abbr)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='abbr';"/>
       </fn>
@@ -8235,7 +8235,7 @@
       </fn>
      </and>
     </p.withPredicate>
-    <sequence role="action" baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1456">
+    <sequence role="action" baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="1456">
      <param name="Q{}type" slot="0">
       <str role="select" val=""/>
       <supplied role="conversion" slot="0"/>
@@ -8503,7 +8503,7 @@
  <overridden/>
  <key name="Q{http://saxon.sf.net/}kk101" line="0" binds="" flags="u">
   <p.nodeSet type="element(Q{http://www.tei-c.org/ns/1.0}div)">
-   <slash baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="31">
+   <slash baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="31">
     <slash>
      <slash>
       <axis name="child" nodeTest="element(Q{http://www.tei-c.org/ns/1.0}TEI)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='TEI';"/>
@@ -8514,27 +8514,27 @@
     <axis name="child" nodeTest="element(Q{http://www.tei-c.org/ns/1.0}div)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='div';"/>
    </slash>
   </p.nodeSet>
-  <attVal baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="-1" name="Q{http://www.w3.org/XML/1998/namespace}id" chk="0"/>
+  <attVal baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="-1" name="Q{http://www.w3.org/XML/1998/namespace}id" chk="0"/>
  </key>
  <key name="Q{http://saxon.sf.net/}kk102" line="0" binds="" flags="u">
   <p.nodeSet type="element(Q{}page)">
-   <axis baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="35" name="child" nodeTest="element(Q{}page)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='page';"/>
+   <axis baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="35" name="child" nodeTest="element(Q{}page)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='page';"/>
   </p.nodeSet>
-  <data baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="35">
+  <data baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="35">
    <dot type="element(Q{}page)"/>
   </data>
  </key>
  <key name="Q{http://saxon.sf.net/}kk103" line="0" binds="" flags="u">
   <p.nodeSet type="element(Q{}poem)">
-   <axis baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="66" name="child" nodeTest="element(Q{}poem)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='poem';"/>
+   <axis baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="66" name="child" nodeTest="element(Q{}poem)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='poem';"/>
   </p.nodeSet>
-  <data baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="66">
+  <data baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="66">
    <dot type="element(Q{}poem)"/>
   </data>
  </key>
  <key name="Q{http://saxon.sf.net/}kk104" line="0" binds="" flags="u">
   <p.nodeSet type="element(Q{http://www.tei-c.org/ns/1.0}witness)">
-   <slash baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="458">
+   <slash baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="458">
     <slash>
      <slash>
       <slash>
@@ -8554,11 +8554,11 @@
     <axis name="child" nodeTest="element(Q{http://www.tei-c.org/ns/1.0}witness)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='witness';"/>
    </slash>
   </p.nodeSet>
-  <attVal baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="-1" name="Q{http://www.w3.org/XML/1998/namespace}id" chk="0"/>
+  <attVal baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="-1" name="Q{http://www.w3.org/XML/1998/namespace}id" chk="0"/>
  </key>
  <key name="Q{http://saxon.sf.net/}kk105" line="0" binds="" flags="u">
   <p.nodeSet type="element(Q{http://www.tei-c.org/ns/1.0}witness)">
-   <slash baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="483">
+   <slash baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="483">
     <slash>
      <slash>
       <slash>
@@ -8578,11 +8578,11 @@
     <axis name="child" nodeTest="element(Q{http://www.tei-c.org/ns/1.0}witness)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='witness';"/>
    </slash>
   </p.nodeSet>
-  <attVal baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="-1" name="Q{http://www.w3.org/XML/1998/namespace}id" chk="0"/>
+  <attVal baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="-1" name="Q{http://www.w3.org/XML/1998/namespace}id" chk="0"/>
  </key>
  <key name="Q{http://saxon.sf.net/}kk106" line="0" binds="" flags="u">
   <p.nodeSet type="element(Q{http://www.tei-c.org/ns/1.0}witness)">
-   <slash baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="509">
+   <slash baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="509">
     <slash>
      <slash>
       <slash>
@@ -8602,17 +8602,17 @@
     <axis name="child" nodeTest="element(Q{http://www.tei-c.org/ns/1.0}witness)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='witness';"/>
    </slash>
   </p.nodeSet>
-  <attVal baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="-1" name="Q{http://www.w3.org/XML/1998/namespace}id" chk="0"/>
+  <attVal baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="-1" name="Q{http://www.w3.org/XML/1998/namespace}id" chk="0"/>
  </key>
  <key name="Q{http://saxon.sf.net/}kk107" line="0" binds="" flags="u">
   <p.nodeSet type="element(Q{http://www.tei-c.org/ns/1.0}pb)">
-   <axis baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="618" name="descendant" nodeTest="element(Q{http://www.tei-c.org/ns/1.0}pb)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='pb';"/>
+   <axis baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="618" name="descendant" nodeTest="element(Q{http://www.tei-c.org/ns/1.0}pb)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri==='http://www.tei-c.org/ns/1.0'&amp;&amp;q.local==='pb';"/>
   </p.nodeSet>
-  <attVal baseUri="file:/Users/andrejp/Repo/pub/Foglar/sidih/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="-1" name="Q{}n" chk="0"/>
+  <attVal baseUri="file:/Users/andrejp/Repo/DARIAH-SI/Foglar-pub/profiles/foglar/para.xsl" ns="xsl=~ tei=http://www.tei-c.org/ns/1.0 ixsl=~ xs=~" line="-1" name="Q{}n" chk="0"/>
  </key>
  <output>
   <property name="{http://saxon.sf.net/}stylesheet-version" value="30"/>
  </output>
  <decimalFormat/>
 </package>
-<?Σ b8622bc1?>
+<?Σ ee01ccc1?>

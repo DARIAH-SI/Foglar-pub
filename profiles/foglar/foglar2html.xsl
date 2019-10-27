@@ -58,7 +58,7 @@
     <!-- Uredi parametre v skladu z dodatnimi zahtevami za pretvorbo te publikacije: -->
     
     <!--<xsl:param name="path-general">../../../</xsl:param>-->
-    <!--<xsl:param name="path-general">http://www2.sistory.si/publikacije/</xsl:param>-->
+    <!--<xsl:param name="path-general">https://www2.sistory.si/publikacije/</xsl:param>-->
     <!-- v primeru localWebsite='true' spodnji paragraf nima vrednosti -->
     <xsl:param name="path-general"></xsl:param>
    
@@ -69,7 +69,7 @@
    <xsl:param name="title-bar-sticky">false</xsl:param>
    
     <xsl:param name="homeLabel">eZISS</xsl:param>
-    <xsl:param name="homeURL">http://nl.ijs.si/e-zrc/foglar/</xsl:param>
+    <xsl:param name="homeURL">https://dariah-si.github.io/Foglar-pub/</xsl:param>
     
    <!-- V html/head izpisani metapodatki -->
    <xsl:param name="description"></xsl:param>
@@ -307,6 +307,11 @@
         <xsl:variable name="image-thumb" select="ancestor::tei:TEI/tei:facsimile/tei:surface[@xml:id=$facs-id]/tei:graphic[@n='thumb']/@url"/>
         <xsl:variable name="image-small" select="ancestor::tei:TEI/tei:facsimile/tei:surface[@xml:id=$facs-id]/tei:graphic[@n='small']/@url"/>
         <xsl:variable name="image-large" select="ancestor::tei:TEI/tei:facsimile/tei:surface[@xml:id=$facs-id]/tei:graphic[@n='orig']/@url"/>
+        <!-- dodam za novo procesiranje -->
+        <xsl:variable name="image" select="tokenize(ancestor::tei:TEI/tei:facsimile/tei:surface[@xml:id=$facs-id]/tei:graphic[@n='orig']/@url,'/')[last()]"/>
+        <xsl:variable name="image-thumb-iiif" select="concat('https://sidih.si/iiif/2/entity|1-1000|1|',$image,'/full/,50/0/default.jpg')"/>
+        <xsl:variable name="image-small-iiif" select="concat('https://sidih.si/iiif/2/entity|1-1000|1|',$image,'/full/,400/0/default.jpg')"/>
+        <xsl:variable name="image-large-iiif" select="concat('https://sidih.si/iiif/2/entity|1-1000|1|',$image,'/full/,900/0/default.jpg')"/>
         <hr/>
         <div class="border-content pb" id="{@xml:id}">
             <div class="dropdown">
@@ -321,7 +326,7 @@
                         <a href="{concat('foglar-para.html?type=page&amp;mode=facs-dipl-crit&amp;page=',@n,'&amp;lb=1')}">vzporedni</a>
                         <a href="{$image-large}">faksimile</a>
                         <a>
-                            <img class="image" src="{$image-thumb}" data-original="{$image-large}" height="50" width="50"/>
+                            <img class="image" src="{$image-thumb-iiif}" data-original="{$image-large-iiif}" height="50" width="50"/>
                         </a>
                     </xsl:if>
                     <xsl:if test="$type='crit'">
@@ -330,7 +335,7 @@
                         <a href="{concat('foglar-para.html?type=page&amp;mode=facs-dipl-crit&amp;page=',@n,'&amp;lb=1')}">vzporedni</a>
                         <a href="{$image-large}">faksimile</a>
                         <a>
-                            <img class="image" src="{$image-thumb}" data-original="{$image-large}" height="50" width="50"/>
+                            <img class="image" src="{$image-thumb-iiif}" data-original="{$image-large-iiif}" height="50" width="50"/>
                         </a>
                     </xsl:if>
                 </div>
@@ -338,10 +343,10 @@
             <br/>
             
             <div class="show-for-large">
-                <img class="image" data-original="{$image-large}" src="{$image-small}"/>
+                <img class="image" data-original="{$image-large-iiif}" src="{$image-small-iiif}"/>
             </div>
             <div class="show-for-medium-only">
-                <img class="image" data-original="{$image-large}" src="{$image-thumb}"/>
+                <img class="image" data-original="{$image-large-iiif}" src="{$image-thumb-iiif}"/>
             </div>
         </div>
     </xsl:template>
